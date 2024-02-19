@@ -1,1 +1,69 @@
-/* Add styles here to make the soundboard actually look like a soundboard! */
+:root {
+    --blue: #2e7dad;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+}
+
+.ableton-push {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+#waveform {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid var(--blue);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.pads {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.pad {
+    background-color: #444;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.pad:hover, .pad:active {
+    background-color: #555;
+}
+
+.pad.pad-active, .pad.pad-active:hover, .pad.pad-active:active {
+    background-color: var(--blue);
+}
+
+.pad:focus {
+    outline: none;
+}
+
+.pad.drag-over {
+    border-color: var(--blue);
+    background-color: #333;
+    box-shadow: 0 0 10px var(--blue);
+}

@@ -1,0 +1,14 @@
+{
+    "soundFiles": [
+      { "file": "sounds/1.mp3", "key": "A" },
+      { "file": "sounds/2.mp3", "key": "S" },
+      { "file": "sounds/3.mp3", "key": "D" },
+      { "file": "sounds/4.mp3", "key": "F" },
+      { "file": "sounds/5.mp3", "key": "G" },
+      { "file": "sounds/6.mp3", "key": "H" },
+      { "file": "sounds/7.mp3", "key": "J" },
+      { "file": "sounds/8.mp3", "key": "K" },
+      { "file": "sounds/9.mp3", "key": "L" }
+    ]
+  }
+  
